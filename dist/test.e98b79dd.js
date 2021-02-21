@@ -130,7 +130,7 @@ exports.default = _default;
 },{}],"test.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("./css.js"));
+var _css = _interopRequireDefault(require("./css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -193,7 +193,7 @@ var player = {
   },
   normal: function normal() {
     player.pause();
-    player.time = 100;
+    player.time = 50;
     player.play();
   },
   fast: function fast() {
@@ -210,7 +210,7 @@ player.init();
 
 //如果一个函数什么都没干只是调用另一个函数，那么可以直接省略外面的函数，(不加括号)
 */
-},{"./css.js":"css.js"}],"C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css":"css.js"}],"C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13833" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1683" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

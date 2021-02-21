@@ -1,6 +1,6 @@
 //核心思路同时以文本的形式和html的形式展示一个style标签。
 //把一大快不相关的代码或是独立的放在一个文件里，在这个文件里到出一个字符串等，再需要的地方导入进来---模块化。css.js里就是模块，里面包含了css
-import string from './css.js'
+import string from './css'
 
 
 
@@ -67,7 +67,7 @@ const player = {
     },
     normal : ()=>{
       player.pause()
-      player.time = 100
+      player.time = 50
       player.play()
     },
     fast : ()=>{
