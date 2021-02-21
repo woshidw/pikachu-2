@@ -1,13 +1,13 @@
 const string =`.skin *{box-sizing: border-box;margin: 0;padding: 0;}
 .skin *::before, .skin *::after{box-sizing: border-box;}
 
-
+/*先画个皮吧*/
 .skin{
     background: #ffe600;
     min-height: 50vh;
     position: relative;
 }
-
+/*再画鼻子*/
 .nose{
     border: 10px solid black;
     border-color: black transparent transparent;
@@ -51,7 +51,7 @@ const string =`.skin *{box-sizing: border-box;margin: 0;padding: 0;}
     border-radius: 10px 10px 0 0;
     background: black;
 }
-
+/*眼睛来了哦*/
 .eye{
     border: 2px solid #000;
     width: 64px;
@@ -82,6 +82,7 @@ const string =`.skin *{box-sizing: border-box;margin: 0;padding: 0;}
 .eye.right{
     transform: translateX(100px);
 }
+/*画嘴巴*/
 .mouth{
     width: 200px;
     height: 200px;
@@ -168,7 +169,7 @@ const string =`.skin *{box-sizing: border-box;margin: 0;padding: 0;}
     margin-left: -100px;
     border-radius: 100px;
 }
-
+/*画脸了*/
 .face{
     position: absolute;
     left: 50%;
