@@ -130,7 +130,7 @@ exports.default = _default;
 },{}],"test.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("./css"));
+var _css = _interopRequireDefault(require("./css.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -181,6 +181,7 @@ var player = {
     player.ui.demo.scrollTop = player.ui.demo.scrollHeight;
   },
   play: function play() {
+    window.clearInterval(player.id);
     player.id = setInterval(player.run, player.time);
   },
   pause: function pause() {
@@ -210,7 +211,7 @@ player.init();
 
 //如果一个函数什么都没干只是调用另一个函数，那么可以直接省略外面的函数，(不加括号)
 */
-},{"./css":"css.js"}],"C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css.js":"css.js"}],"C:/Users/Administrator/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
